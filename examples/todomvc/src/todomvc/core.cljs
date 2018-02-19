@@ -7,7 +7,8 @@
             [todomvc.events] ;; These two are only required to make the compiler
             [todomvc.subs]   ;; load them (see docs/Basic-App-Structure.md)
             [todomvc.views]
-            [devtools.core :as devtools])
+            [devtools.core :as devtools]
+            [re-frisk-remote.core :refer [enable-re-frisk-remote!]])
   (:import [goog History]
            [goog.history EventType]))
 
@@ -46,6 +47,7 @@
   ;; The event handler for `:initialise-db` can be found in `events.cljs`
   ;; Using the sync version of dispatch means that value is in
   ;; place before we go onto the next step.
+  (enable-re-frisk-remote!)
   (dispatch-sync [:initialise-db])
 
   ;; Render the UI into the HTML's <div id="app" /> element
@@ -53,4 +55,3 @@
   ;; root view for the entire UI.
   (reagent/render [todomvc.views/todo-app]
                   (.getElementById js/document "app")))
-

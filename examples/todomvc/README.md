@@ -2,12 +2,12 @@
 
 A [re-frame](https://github.com/Day8/re-frame) implementation of [TodoMVC](http://todomvc.com/).
 
-But this is NOT your normal, lean and minimal todomvc implementation, 
+But this is NOT your normal, lean and minimal todomvc implementation,
 geared towards showing how easily re-frame can implement the challenge.
- 
-Instead, this todomvc example has evolved into more of a teaching tool 
-and we've thrown in more advanced re-frame features which are not 
-really required to get the job done. So lean and minimal is no longer a goal. 
+
+Instead, this todomvc example has evolved into more of a teaching tool
+and we've thrown in more advanced re-frame features which are not
+really required to get the job done. So lean and minimal is no longer a goal.
 
 
 ## Setup And Run
@@ -35,6 +35,14 @@ really required to get the job done. So lean and minimal is no longer a goal.
    open http://localhost:3450
    ```
 
+6. Inspect events; in a different shell/tab open [re-frisk](https://github.com/flexsurfer/re-frisk)
+    ```
+    lein re-frisk
+    ```
+    Wait to
+    ```
+    open http://localhost:4567
+    ```
 
 ## Compile an optimised version
 
@@ -72,4 +80,4 @@ src
 
 ## Further Notes
 
-The [official reagent example](https://github.com/reagent-project/reagent/tree/master/examples/todomvc). 
+The [official reagent example](https://github.com/reagent-project/reagent/tree/master/examples/todomvc).

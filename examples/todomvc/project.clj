@@ -5,14 +5,12 @@
                  [re-frame "0.10.1"]
                  [binaryage/devtools "0.9.4"]
                  [secretary "1.2.3"]]
-
-
   :plugins [[lein-cljsbuild "1.1.5"]
-            [lein-figwheel  "0.5.13"]]
-
+            [lein-figwheel  "0.5.13"]
+            [lein-re-frisk "0.5.5"]]
   :hooks [leiningen.cljsbuild]
-
-  :profiles {:dev  {:cljsbuild
+  :profiles {:dev {:dependencies [[re-frisk-remote "0.5.3"]]
+                   :cljsbuild
                     {:builds {:client {:compiler {:asset-path           "js"
                                                   :optimizations        :none
                                                   :source-map           true
