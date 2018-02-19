@@ -1,3 +1,8 @@
+>  The methods described in this page are now out of date. Included for historical reasons only.  
+> [re-frame-trace](https://github.com/Day8/re-frame-trace) is now our recommeded tool. 
+
+---
+
 ## Debugging
 
 This page describes a technique for 
@@ -101,7 +106,7 @@ It is the functions within these namespaces that we wish to trace.
 ```
 
 3. Finally, put in a closing `)` at the end of the file. Now all functions within the 
-`ns` will be traced.  It that is too noisy -- perhaps you won't want to trace all the helper functions --
+`ns` will be traced.  If that is too noisy -- perhaps you won't want to trace all the helper functions --
 then you can move the wrapping macros `trace-froms`
 around to suit your needs.
 
